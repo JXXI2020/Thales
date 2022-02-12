@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Employees from API</h1>
+    <p>.</p>
+    <div class "row">
+        <div>
+            Id Employee
+            <input type="text" name="user" />
+            <input type="button" class="btn-primary" value="Search"/>
+
+
+        </div>
+
+    </div>
+
+    <ul>
+        @foreach (var Employee in Model)
+        {
+            <li>@Employee.employee_name</li>
+        }
+    </ul>
+
+</div>
